@@ -1,0 +1,14 @@
+{
+    "name": "inoplate/notifier",
+    "autoload": {
+        "psr-4": {
+            "Inoplate\\Notifier\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "require": {
+        "predis/predis": "^1.0"
+    }
+}

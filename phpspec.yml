@@ -1,0 +1,4 @@
+suites:
+  library_suite:
+    namespace: Inoplate\Notifier
+    psr4_prefix: Inoplate\Notifier
