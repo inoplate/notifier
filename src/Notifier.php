@@ -9,7 +9,9 @@ interface Notifier
      * 
      * @param  string $message
      * @param  string $userId
+     * @param  string $url
+     * 
      * @return void
      */
-    public function notify($message, $userId);
+    public function notify($message, $userId, $url = '');
 }

@@ -24,10 +24,12 @@ class DatabaseNotifier implements Notifier
      * 
      * @param  string $message
      * @param  string $userId
+     * @param  string $url
+     * 
      * @return void
      */
-    public function notify($message, $userId)
+    public function notify($message, $userId, $url = '')
     {
-        $this->notifRepository->insert($message, $userId);
+        $this->notifRepository->insert($message, $userId, $url);
     }
 }

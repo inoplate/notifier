@@ -26,9 +26,11 @@ class EloquentNotif implements NotifRepository
      * 
      * @param  string $message
      * @param  string $userId
+     * @param  string $url
+     * 
      * @return void
      */
-    public function insert($message, $userId)
+    public function insert($message, $userId, $url = '')
     {
         $notification = $this->model->newInstance();
         $id = Uuid::uuid4();
@@ -36,6 +38,7 @@ class EloquentNotif implements NotifRepository
         $notification->id = $id;
         $notification->message = $message;
         $notification->user_id = $userId;
+        $notification->url = $url;
 
         $notification->save();
     }

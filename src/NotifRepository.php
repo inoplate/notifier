@@ -9,7 +9,9 @@ interface NotifRepository
      * 
      * @param  string $message
      * @param  string $userId
+     * @param  string $url
+     * 
      * @return void
      */
-    public function insert($message, $userId);
+    public function insert($message, $userId, $url = '');
 }
