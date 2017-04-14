@@ -11,7 +11,7 @@ class DatabaseNotifier implements Notifier
 
     /**
      * Create new DatabaseNotifier instance
-     * 
+     *
      * @param NotifRepository $notifRepository
      */
     public function __construct(NotifRepository $notifRepository)
@@ -21,11 +21,11 @@ class DatabaseNotifier implements Notifier
 
     /**
      * Notify user
-     * 
+     *
      * @param  string $message
      * @param  string $userId
      * @param  string $url
-     * 
+     *
      * @return void
      */
     public function notify($message, $userId, $url = '')
